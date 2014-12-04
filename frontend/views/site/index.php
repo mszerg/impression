@@ -2,6 +2,13 @@
 /* @var $this yii\web\View */
 $this->title = 'My Yii Application';
 ?>
+
+<style>
+    .item img {
+        text-align: center; /* Выравнивание по центру */
+    }
+</style>
+
 <div class="site-index">
 
 
@@ -9,79 +16,71 @@ $this->title = 'My Yii Application';
     <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
 
         <!-- Carousel indicators -->
-
         <ol class="carousel-indicators">
-
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-
             <li data-target="#myCarousel" data-slide-to="1"></li>
-
             <li data-target="#myCarousel" data-slide-to="2"></li>
-
         </ol>
 
+        <?php
+        $dir    = '/' . $_SERVER["DOCUMENT_ROOT"] . '/impression/frontend/views/foto';
+        $foto_file = scandir($dir);
+        $k_max = count($foto_file)-1;
+        //echo $_SERVER["DOCUMENT_ROOT"];
+        //$num_foto_1_1 = rand (2,$k_max);
+        //$num_foto_2_1 = rand (2,$k_max);
+        //$num_foto_3_1 = rand (2,$k_max);
+        //print_r($foto_file);
+        //echo  $dir . "/" . $foto_file[2];
+        ?>
+
         <!-- Carousel items -->
-
         <div class="carousel-inner">
-
             <div class="item active">
-
                 <h2>Slide 1</h2>
-<center><img src="http://cs10426.vk.me/u72091913/a_4d5b93e5.jpg"></center>
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
                 <div class="carousel-caption">
-
                     <h3>First slide label</h3>
-
                     <p>Lorem ipsum dolor sit amet consectetur…</p>
-
                 </div>
-
             </div>
 
             <div class="item">
-
                 <h2>Slide 2</h2>
-
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
                 <div class="carousel-caption">
-
                     <h3>Second slide label</h3>
-
                     <p>Aliquam sit amet gravida nibh, facilisis gravida…</p>
-
                 </div>
-
             </div>
 
             <div class="item">
-
                 <h2>Slide 3</h2>
-
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
+                <img align="center" src=<?php echo "http://bezlesti.com/impression/frontend/views/foto/" . $foto_file[rand (2,$k_max)] ?> >
                 <div class="carousel-caption">
-
                     <h3>Third slide label</h3>
-
                     <p>Praesent commodo cursus magna vel…</p>
-
                 </div>
-
             </div>
 
         </div>
 
+
+
         <!-- Carousel nav -->
-
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-
             <span class="glyphicon glyphicon-chevron-left"></span>
-
         </a>
 
         <a class="carousel-control right" href="#myCarousel" data-slide="next">
-
             <span class="glyphicon glyphicon-chevron-right"></span>
-
         </a>
-
     </div>
 
 
