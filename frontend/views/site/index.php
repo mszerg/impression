@@ -2,15 +2,76 @@
 /* @var $this yii\web\View */
 $this->title = 'My Yii Application';
 ?>
+
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
+    <div class="container">
+        <div class="col-md-12">
+    <div class="well">
+        <div id="myCarousel" class="carousel slide">
 
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                    </div>
+
+                    <!--/row-->
+                </div>
+                <!--/item-->
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <!--/item-->
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x"><img src="/impression/frontend/web/foto/image<?php echo rand ( 1 , 4 ) . '.jpg' ?>"  alt="Image" class="img-responsive" ></a>
+                        </div>
+                    </div>
+                    <!--/row-->
+                </div>
+                <!--/item-->
+            </div>
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
+        </div>
+        <!--/myCarousel-->
     </div>
+    <!--/well-->
+</div>
+
+
+
 
     <div class="body-content">
 
