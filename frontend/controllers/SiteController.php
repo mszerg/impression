@@ -67,7 +67,17 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        return $this->render('index');
+        //get base path
+        $baseUrl = Yii::getAlias('@webroot');
+        //get path of photo
+        $imageUrl = $baseUrl . '/foto';
+        //scan for photos
+        $sliderImage = scandir($imageUrl);
+        $i = rand(2, sizeof($sliderImage)-1);
+        return $this->render('index', [
+            'i' => $i,
+            'sliderImage' => $sliderImage,
+        ]);
     }
 
     public function actionLogin()
